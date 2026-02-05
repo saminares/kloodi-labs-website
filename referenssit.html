@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Referenssit - Kloodi Labs</title>
+  <meta name="description" content="Kloodi Labsin projektit ja asiakastyöt. Katso, mitä olemme rakentaneet.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Referenssit - Kloodi Labs">
+  <meta property="og:description" content="Kloodi Labsin projektit ja asiakastyöt.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23C61D23'/%3E%3C/svg%3E">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.jpg" alt="Kloodi Labs" style="height: 56px; width: auto;">
+      </a>
+      
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="referenssit.html" class="active">Referenssit</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- References Hero -->
+  <section class="hero" style="padding: 48px 0 32px;">
+    <div class="container">
+      <h1>Projektit ja referenssit</h1>
+      <p>Katsaus viimeaikaisiin projekteihin ja asiakastöihin. Jokaisessa työssä sama sitoutuminen laatuun.</p>
+    </div>
+  </section>
+
+  <!-- References Grid -->
+  <section style="padding: 32px 0 64px;">
+    <div class="container">
+      <div class="reference-grid">
+        <!-- Reference 1 -->
+        <div class="reference-card">
+          <div class="reference-industry">Tietoturva</div>
+          <h3>Malware Scanner Service</h3>
+          <p>Kevyt haittaohjelmien skannausmikropalvelu ClamAV-taustajärjestelmällä. Asynkroninen tiedostoskannaus, karanteenityönkulku ja reaaliaikaiset tulokset REST API:n kautta.</p>
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">ClamAV</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <!-- Reference 2 -->
+        <div class="reference-card">
+          <div class="reference-industry">Energia & Ympäristö</div>
+          <h3>Helsinki Solar Mapper</h3>
+          <p>Interaktiivinen karttasovellus Helsingin aurinkoenergian potentiaalin visualisointiin. Rakennuskohtaiset aurinkopaneelilaskelmat ja tuottoarviot kartalla.</p>
+          <div class="tech-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Leaflet</span>
+            <span class="tag">GeoJSON</span>
+            <span class="tag">REST API</span>
+          </div>
+        </div>
+
+        <!-- Reference 3 -->
+        <div class="reference-card">
+          <div class="reference-industry">Kehittäjätyökalut</div>
+          <h3>Skill Library</h3>
+          <p>Modulaarinen taitokirjasto tekoälyagenteille. Jaettava ekosysteemi, jossa agentit voivat löytää, asentaa ja jakaa erikoistuneita taitoja.</p>
+          <div class="tech-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">REST API</span>
+            <span class="tag">JSON Schema</span>
+            <span class="tag">npm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Seuraava projekti voisi olla sinun</h2>
+      <p>Keskustellaan, miten voimme auttaa sinua saavuttamaan tavoitteesi.</p>
+      <a href="yhteystiedot.html" class="btn btn-primary">Ota yhteyttä</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Kloodi Labs</h4>
+        <p style="color: #6B7280; font-size: 14px; margin-top: 8px;">Modernin ohjelmistokehityksen laboratorio</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Sivut</h4>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="referenssit.html">Referenssit</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Palvelut</h4>
+        <ul>
+          <li><a href="#">Ohjelmistokehitys</a></li>
+          <li><a href="#">Konsultointi</a></li>
+          <li><a href="#">Tekoäly</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kloodi Labs. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
