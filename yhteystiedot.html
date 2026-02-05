@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yhteystiedot - Kloodi Labs</title>
+  <meta name="description" content="Ota yhteyttä Kloodi Labsiin. Keskustellaan projektistasi.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yhteystiedot - Kloodi Labs">
+  <meta property="og:description" content="Ota yhteyttä Kloodi Labsiin. Keskustellaan projektistasi.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23C61D23'/%3E%3C/svg%3E">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.jpg" alt="Kloodi Labs" style="height: 56px; width: auto;">
+      </a>
+      
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="referenssit.html">Referenssit</a></li>
+        <li><a href="yhteystiedot.html" class="active">Yhteystiedot</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Hero -->
+  <section class="hero" style="padding: 48px 0 32px;">
+    <div class="container">
+      <h1>Ota yhteyttä</h1>
+      <p>Kerro meille projektistasi tai kysy lisätietoja. Vastaamme 1-2 arkipäivän sisällä.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section style="padding: 32px 0 64px;">
+    <div class="container">
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2 style="margin-bottom: 24px;">Lähetä viesti</h2>
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Nimi *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Sähköposti *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Yritys</label>
+              <input type="text" id="company" name="company">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Viesti *</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Yhteystiedot</h3>
+          
+          <div class="info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <div>
+              <h4>Sähköposti</h4>
+              <p>info@kloodi.fi</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <h4>Puhelin</h4>
+              <p>+358 40 123 4567</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <h4>Toimisto</h4>
+              <p>Kloodi Labs Oy<br>Esimerkkikatu 12<br>00100 Helsinki</p>
+            </div>
+          </div>
+          
+          <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #E5E7EB;">
+            <h4 style="font-size: 14px; margin-bottom: 8px;">Y-tunnus</h4>
+            <p style="color: #6B7280; font-size: 14px;">1234567-8</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Map Placeholder -->
+      <div style="margin-top: 48px; background: white; border: 1px solid #E5E7EB; border-radius: 12px; height: 300px; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; color: #6B7280;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin: 0 auto 16px;">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <p>Kartta tulossa pian</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Kloodi Labs</h4>
+        <p style="color: #6B7280; font-size: 14px; margin-top: 8px;">Modernin ohjelmistokehityksen laboratorio</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Sivut</h4>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="referenssit.html">Referenssit</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Palvelut</h4>
+        <ul>
+          <li><a href="#">Ohjelmistokehitys</a></li>
+          <li><a href="#">Konsultointi</a></li>
+          <li><a href="#">Tekoäly</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kloodi Labs. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
